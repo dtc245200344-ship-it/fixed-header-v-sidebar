@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    padding-top: 60px; /* Đẩy nội dung xuống tránh bị header che khuất vì header dùng position: fixed */
+}
+
+/* Fixed Header */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.header-left h1 {
+    color: #1877f2;
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-center input {
+    width: 240px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f0f2f5;
+    outline: none;
+}
+
+.header-right {
+    font-weight: bold;
+    color: #4b4f56;
+}
+
+/* Main Container Layout */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sidebars */
+.sidebar {
+    width: 250px;
+    padding: 10px;
+}
+
+.left-sidebar ul, .right-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-sidebar li, .right-sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.left-sidebar li:hover, .right-sidebar li:hover {
+    background-color: #e4e6eb;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.post-box, .feed-post {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.post-box textarea {
+    width: 100%;
+    height: 60px;
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 5px;
+}
+
+.post-box button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+}
+
+.post-box button:hover {
+    background-color: #166fe5;
+}
